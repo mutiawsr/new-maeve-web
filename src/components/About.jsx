@@ -1,20 +1,30 @@
+import { useState } from "react";
 import Icon from "./Icon";
 
 function About() {
+    const [innerWidth, setInnerWidth] = useState(window.innerWidth);
+
+    window.addEventListener('resize', () => {
+        setInnerWidth(window.innerWidth);
+    });
+
     return (
         <div className="h-screen bg-black">
             <section className="flex flex-col items-center justify-center h-full" id="about">
                 <h1 className="mb-4 text-3xl font-bold">About Me</h1>
-                <div className="mockup-browser border border-neutral/30 bg-white text-black w-65/100 h-5/10">
-                    <div className="mockup-browser-toolbar">
-                        <div className="input border border-neutral/30 text-center">
-                            https://about-maeve.com
-                        </div>
+                <div className={`mockup-browser border border-neutral/30 bg-white text-black w-65/100 m-8`}>
+                    <div className="mockup-browser-toolbar flex justify-between">
+                        {innerWidth < 768 ? null :
+                            <div className="input border border-neutral/30 text-center">
+                                https://about-maeve.com
+                            </div>
+                        }
                         <Icon
                             href="https://about-maeve.netlify.app/"
                             d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm11-3v8h-2V6.413l-7.793 7.794l-1.414-1.414L17.585 5H13V3z"
-                            text="Secret (!!)"
-                            square={false} />
+                            text="Secret"
+                            square={false}
+                            size="btn-sm" />
                     </div>
                     <div className="flex flex-col items-center gap-5 justify-center px-4 py-10 border-t border-neutral/30">
                         <div className="mb-2">
@@ -23,7 +33,7 @@ function About() {
                             <h5>I specialize in full-stack web and mobile apps development.</h5>
                             <h5>Feel free to connect with me on social media!</h5>
                         </div>
-                        <div className="flex gap-3">
+                        <div className="flex flex-wrap gap-3">
                             <Icon
                                 href="https://www.linkedin.com/in/mutiawulansari/"
                                 d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />

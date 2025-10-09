@@ -79,7 +79,7 @@ function Navbar() {
                             {item.name}
                         </a>
                     ))}
-                    {window.innerWidth < 640 ? <a href="/CV Mutia Wulansari.pdf" download>CV</a> : null}
+                    {window.innerWidth < 768 ? <a href="/CV Mutia Wulansari.pdf" download>CV</a> : null}
                 </div>
             </div>
         </nav>
