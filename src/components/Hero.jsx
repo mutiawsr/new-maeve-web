@@ -7,7 +7,6 @@ function Hero() {
             <Header />
             <section className="flex flex-col items-center justify-center gap-8 mt-5">
                 <div>
-                    <h1 className="text-center text-4xl font-bold mb-5">Hello, World! Maeve's here 👋</h1>
                     <img
                         src="/Mono.webp"
                         alt="Princess Mononoke wearing mask GIF"

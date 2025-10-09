@@ -1,7 +1,8 @@
 import { useState } from "react";
+import DownloadCV from "./DownloadCV";
 
 const navigation = [
-    { name: 'About', href: '#about'},
+    { name: 'About', href: '#about' },
     { name: 'Secret', href: 'https://about-maeve.netlify.app/', target: '_blank' },
 ]
 
@@ -66,9 +67,8 @@ function Navbar() {
 
             {/* Mobile menu (expands left) */}
             <div
-                className={`absolute top-full right-6 transform transition-all duration-300 origin-top-right
-          ${isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"} 
-          md:hidden bg-neutral-900 border border-neutral-700 rounded-lg shadow-lg`}
+                className={`absolute top-full ${window.innerWidth < 324 ? "left-6 origin-top-left" : "right-6 origin-top-right"} transform transition-all duration-300 
+                ${isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"} md:hidden bg-neutral-900 border border-neutral-700 rounded-lg shadow-lg`}
             >
                 <div className="flex flex-col items-end space-y-3 px-6 py-4 font-semibold">
                     {navigation.map((item) => (
@@ -79,6 +79,7 @@ function Navbar() {
                             {item.name}
                         </a>
                     ))}
+                    {window.innerWidth < 640 ? <a href="/CV Mutia Wulansari.pdf" download>CV</a> : null}
                 </div>
             </div>
         </nav>
