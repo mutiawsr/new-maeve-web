@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const navigation = [
     { name: 'About', href: '#about'},
-    { name: 'Secret', href: 'https://about-maeve.netlify.app/'},
+    { name: 'Secret', href: 'https://about-maeve.netlify.app/', target: '_blank' },
 ]
 
 function Navbar() {
@@ -55,6 +55,7 @@ function Navbar() {
                         <a
                             key={item.name}
                             href={item.href}
+                            target={item.target}
                             className="effect-shine"
                         >
                             {item.name}
