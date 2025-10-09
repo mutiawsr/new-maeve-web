@@ -3,9 +3,9 @@ import Button from './Button';
 
 function Hero() {
     return (
-        <div className="h-screen">
+        <div className="h-screen flex flex-col">
             <Header />
-            <section className="flex flex-col items-center justify-center gap-8 mt-10">
+            <section className="flex flex-col items-center justify-center flex-1 gap-8">
                 <div>
                     <img
                         src="/Mono.webp"
@@ -17,7 +17,7 @@ function Hero() {
                 </div>
             </section>
         </div>
-    )
+    );
 }
 
 export default Hero;
