@@ -5,7 +5,7 @@ function Hero() {
     return (
         <div className="h-screen">
             <Header />
-            <section className="flex flex-col items-center justify-center gap-8 mt-5">
+            <section className="flex flex-col items-center justify-center gap-8 mt-10">
                 <div>
                     <img
                         src="/Mono.webp"
