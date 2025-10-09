@@ -14,7 +14,7 @@ function Hero() {
                     />
                 </div>
                 <div>
-                    <Button text="Get To Know Maeve!" className="text-black" />
+                    <Button text="Get To Know Maeve!" className="text-black" href="#about" />
                 </div>
             </section>
         </div>

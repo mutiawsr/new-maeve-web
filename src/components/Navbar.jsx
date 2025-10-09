@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 const navigation = [
-    { name: 'About', href: '#'},
-    { name: 'Contact', href: '#'},
+    { name: 'About', href: '#about'},
+    { name: 'Secret', href: 'https://about-maeve.netlify.app/'},
 ]
 
 function Navbar() {

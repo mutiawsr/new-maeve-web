@@ -3,7 +3,7 @@ import Icon from "./Icon";
 function About() {
     return (
         <div className="h-screen bg-black">
-            <section className="flex flex-col items-center justify-center h-full">
+            <section className="flex flex-col items-center justify-center h-full" id="about">
                 <h1 className="mb-4 text-3xl font-bold">About Me</h1>
                 <div className="mockup-browser border border-neutral/30 bg-white text-black w-65/100 h-5/10">
                     <div className="mockup-browser-toolbar">
@@ -11,7 +11,7 @@ function About() {
                             https://about-maeve.com
                         </div>
                         <Icon
-                            href="https://maeves.netlify.app/"
+                            href="https://about-maeve.netlify.app/"
                             d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm11-3v8h-2V6.413l-7.793 7.794l-1.414-1.414L17.585 5H13V3z"
                             text="Secret (!!)"
                             square={false} />
