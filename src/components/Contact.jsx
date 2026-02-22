@@ -1,20 +1,6 @@
 import { useState, useRef } from "react";
 
 function Contact() {
-  const [hasFile, setHasFile] = useState(false);
-  const fileInputRef = useRef(null);
-
-  const handleFileChange = (e) => {
-    setHasFile(!!e.target.files.length);
-  };
-
-  const removeFile = () => {
-    if (fileInputRef.current) {
-      fileInputRef.current.value = "";
-      setHasFile(false);
-    }
-  };
-
   return (
     <div className="min-h-screen bg-black text-white">
       <section
@@ -62,30 +48,6 @@ function Contact() {
                   className="textarea textarea-bordered w-full bg-neutral-950 border-neutral-800 focus:border-white transition-all rounded-xl p-4 outline-none resize-none"
                   required
                 ></textarea>
-              </div>
-
-              <div className="space-y-2">
-                <div className="flex justify-between items-center ml-1">
-                  <label className="text-sm font-medium text-neutral-300">
-                    Attachment
-                  </label>
-                  {hasFile && (
-                    <button
-                      type="button"
-                      onClick={removeFile}
-                      className="text-xs font-bold text-white-500 hover:text-white-400 transition-colors uppercase tracking-wider"
-                    >
-                      Remove
-                    </button>
-                  )}
-                </div>
-                <input
-                  type="file"
-                  name="upload"
-                  ref={fileInputRef}
-                  onChange={handleFileChange}
-                  className="file-input file-input-bordered w-full bg-neutral-950 border-neutral-800 focus:border-white transition-all rounded-xl h-12 text-sm text-neutral-400 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-bold file:bg-neutral-800 file:text-white hover:file:bg-neutral-700 cursor-pointer"
-                />
               </div>
 
               <div className="pt-4">
