@@ -28,7 +28,7 @@ function Hero() {
           <div className="pt-2 mb-auto">
             <a href="#about" className="group relative block">
               <div className="absolute -inset-0.5 bg-white/20 rounded-full blur opacity-0 group-hover:opacity-100 transition duration-300"></div>
-              <button className="relative px-6 py-2.5 bg-white text-black font-semibold rounded-full text-sm transition-all transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+              <button className="relative px-6 py-2.5 bg-white text-black font-bold rounded-full text-sm transition-all transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.1)]">
                 Get To Know Me
               </button>
             </a>

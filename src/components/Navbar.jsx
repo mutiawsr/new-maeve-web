@@ -63,7 +63,7 @@ function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`fixed md:absolute top-full right-0 mt-4 transform transition-all duration-300 origin-top-right 
+        className={`absolute top-full right-0 mt-4 transform transition-all duration-300 origin-top-right 
                 ${isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"} md:hidden bg-neutral-900/95 border border-neutral-800 rounded-2xl shadow-2xl backdrop-blur-xl min-w-[240px] z-50`}
       >
         <div className="flex flex-col items-end space-y-5 px-8 py-8 font-semibold">
