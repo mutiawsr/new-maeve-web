@@ -21,7 +21,7 @@ function About() {
             <h1 className="text-3xl md:text-4xl font-extrabold mb-4 tracking-tight bg-gradient-to-r from-white to-neutral-500 bg-clip-text text-transparent italic uppercase">
               ABOUT ME
             </h1>
-            <div className="h-1 w-16 bg-white mx-auto rounded-full opacity-20"></div>
+            <div className="h-1 w-16 bg-gradient-to-r from-transparent via-white/40 to-transparent mx-auto rounded-full"></div>
           </div>
 
           <div
