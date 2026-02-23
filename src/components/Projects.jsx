@@ -25,7 +25,7 @@ function Projects() {
 
             <div className="max-w-3xl mx-auto px-4 relative z-10">
                 <div className="text-center mb-12">
-                    <h2 className="text-2xl md:text-4xl font-extrabold mb-3 tracking-tighter bg-gradient-to-r from-white via-neutral-200 to-neutral-500 bg-clip-text text-transparent italic uppercase">
+                    <h2 className="text-3xl md:text-4xl font-extrabold mb-3 tracking-tighter bg-gradient-to-r from-white via-neutral-200 to-neutral-500 bg-clip-text text-transparent italic uppercase">
                         PROJECTS
                     </h2>
                     <div className="h-1 w-16 bg-gradient-to-r from-transparent via-white/40 to-transparent mx-auto rounded-full"></div>

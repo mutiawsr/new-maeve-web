@@ -16,35 +16,35 @@ function About() {
         className="flex flex-col items-center justify-center min-h-screen px-4 py-20"
         id="about"
       >
-        <div className="w-full max-w-4xl flex flex-col items-center">
-          <div className="text-center mb-12">
-            <h1 className="text-3xl md:text-4xl font-extrabold mb-4 tracking-tight bg-gradient-to-r from-white to-neutral-500 bg-clip-text text-transparent italic uppercase">
+        <div className="w-full max-w-2xl flex flex-col items-center">
+          <div className="text-center mb-10">
+            <h1 className="text-3xl md:text-4xl font-extrabold mb-3 tracking-tight bg-gradient-to-r from-white to-neutral-500 bg-clip-text text-transparent italic uppercase">
               ABOUT ME
             </h1>
             <div className="h-1 w-16 bg-gradient-to-r from-transparent via-white/40 to-transparent mx-auto rounded-full"></div>
           </div>
 
           <div
-            className={`mockup-browser border border-neutral-800 bg-neutral-900/50 text-white w-full backdrop-blur-md shadow-2xl rounded-3xl overflow-hidden`}
+            className={`mockup-browser border border-neutral-800 bg-neutral-900/50 text-white w-full backdrop-blur-md shadow-2xl rounded-2xl overflow-hidden`}
           >
-            <div className="mockup-browser-toolbar flex justify-between items-center px-6 py-4 bg-neutral-900/80 border-b border-neutral-800">
-              <div className="flex gap-1.5 ml-2">
-                <div className="w-3 h-3 rounded-full bg-red-500/50"></div>
-                <div className="w-3 h-3 rounded-full bg-yellow-500/50"></div>
-                <div className="w-3 h-3 rounded-full bg-green-500/50"></div>
+            <div className="mockup-browser-toolbar flex justify-between items-center px-4 py-3 bg-neutral-900/80 border-b border-neutral-800">
+              <div className="flex gap-1.5 ml-1">
+                <div className="w-2.5 h-2.5 rounded-full bg-red-500/50"></div>
+                <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/50"></div>
+                <div className="w-2.5 h-2.5 rounded-full bg-green-500/50"></div>
               </div>
             </div>
-            <div className="flex flex-col items-center gap-8 justify-center px-8 py-12 md:px-16 md:py-16">
-              <div className="space-y-4 text-center">
-                <h2 className="text-xl md:text-2xl font-semibold text-white/90 leading-relaxed">
+            <div className="flex flex-col items-center gap-6 justify-center px-6 py-10 md:px-12 md:py-12">
+              <div className="space-y-3 text-center">
+                <h2 className="text-lg md:text-xl font-semibold text-white/90 leading-relaxed">
                   Hello World!
                 </h2>
-                <p className="text-neutral-400 text-lg max-w-2xl mx-auto">
+                <p className="text-neutral-400 text-base max-w-md mx-auto">
                   My name is Mutia Wulansari. I am a software engineer based in Jakarta, Indonesia.<br /><br />
                   I love building web and mobile apps and working with new technologies.
                   I am passionate about creating innovative and impactful products with great user experiences.
                 </p>
-                <p className="text-neutral-500 italic">
+                <p className="text-neutral-500 text-sm italic">
                   Feel free to connect with me on social media!
                 </p>
               </div>
